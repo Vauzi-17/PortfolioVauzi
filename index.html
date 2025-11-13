@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>Vauzi - Full Stack Developer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <strong>Vauzit</strong>
+                <strong>Vauzi</strong>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -29,7 +35,7 @@
         <div class="hero-content">
             <h1 class="greeting">Hello</h1>
             <h2 class="name">I am Vauzi</h2>
-            <p class="description">Full Stack Developer</p>
+            <p class="description"><span class="typing-text" id="typingText"></span></p>
             <p class="bio">Passionate about creating beautiful and functional web experiences. I specialize in building
                 responsive websites and web applications using modern technologies.</p>
             <div class="hero-buttons">
@@ -38,12 +44,11 @@
                         <i class="fa fa-download"></i> Download CV
                     </button>
                 </a>
-
                 <button class="btn btn-secondary">Get In Touch</button>
             </div>
         </div>
         <div class="hero-image">
-            <img src="assets/saya.png" alt="Vauzi Profile" class="profile-image">
+            <img src="/assets/saya.png" alt="Vauzi Profile" class="profile-image">
         </div>
     </section>
 
@@ -55,9 +60,13 @@
 
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Full Stack Developer with a strong foundation in both front-end and back-end technologies. I love creating intuitive, user-friendly interfaces and robust server-side solutions.</p>
-                    
-                    <p>With experience in modern web technologies, I'm dedicated to building high-quality applications that solve real-world problems. I believe in continuous learning and staying updated with the latest industry trends.</p>
+                    <p>I'm a passionate Full Stack Developer with a strong foundation in both front-end and back-end
+                        technologies. I love creating intuitive, user-friendly interfaces and robust server-side
+                        solutions.</p>
+
+                    <p>With experience in modern web technologies, I'm dedicated to building high-quality applications
+                        that solve real-world problems. I believe in continuous learning and staying updated with the
+                        latest industry trends.</p>
 
                     <h3 class="skills-title">My Skills</h3>
                     <div class="skills-grid">
@@ -88,27 +97,68 @@
                     </div>
                 </div>
 
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <h3 class="stat-number">5+</h3>
-                        <p class="stat-label">Years Experience</p>
+                <div class="about-image-container">
+                    <img src="/assets/saya.png" alt="Vauzi About" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are some works I’ve built recently</p>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assets/project/sentinel.png" alt="Project 1">
                     </div>
-                    <div class="stat-box">
-                        <h3 class="stat-number">50+</h3>
-                        <p class="stat-label">Projects Completed</p>
+                    <h3 class="project-title">Sentinel – Game Catalog Website</h3>
+                    <p class="project-desc">A modern game catalog platform that showcases a variety of titles in one
+                        place, designed with a clean interface and smooth navigation similar to digital game stores.</p>
+
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="project-btn figma"><i class="fa-brands fa-figma"></i> Figma</a>
                     </div>
-                    <div class="stat-box">
-                        <h3 class="stat-number">30+</h3>
-                        <p class="stat-label">Happy Clients</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assets/project/kittendog.png" alt="Project 2">
                     </div>
-                    <div class="stat-box">
-                        <h3 class="stat-number">100%</h3>
-                        <p class="stat-label">Client Satisfaction</p>
+                    <h3 class="project-title">TicTacToe – Two-Player Web Game with Leaderboard</h3>
+                    <p class="project-desc">A web-based TicTacToe game that supports two local players, complete with a
+                        simple leaderboard to track scores and add a competitive touch.</p>
+
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="project-btn figma"><i class="fa-brands fa-figma"></i> Figma</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="/assets/project/mycelengan.jpg" alt="Project 3">
+                    </div>
+                    <h3 class="project-title">MyCelengan – Savings Goal Android App</h3>
+                    <p class="project-desc">An Android app that helps users set and track savings goals. Built with a
+                        simple, user-friendly design for planning purchases and reaching financial targets.</p>
+
+                    <div class="project-buttons">
+                        <a href="#" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="project-btn figma"><i class="fa-brands fa-figma"></i> Figma</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -129,19 +179,21 @@
                 <h4 class="social-title">Follow Me</h4>
                 <div class="social-icons">
                     <a href="https://github.com/Vauzi-17" target="_blank" class="footer-social-icon" title="GitHub">
-                        <i class="fa fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="www.linkedin.com/in/vauzi-tri-utomo-3967b0346" target="_blank" class="footer-social-icon" title="LinkedIn">
-                        <i class="fa fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/vauzi-tri-utomo-3967b0346" target="_blank"
+                        class="footer-social-icon" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://twitter.com" target="_blank" class="footer-social-icon" title="Facebook">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/vauzitzy/" target="_blank" class="footer-social-icon" title="Instagram">
-                        <i class="fa fa-instagram"></i>
+                    <a href="https://www.instagram.com/vauzitzy/" target="_blank" class="footer-social-icon"
+                        title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="mailto:vauzitriutomo5@gmail.com" class="footer-social-icon" title="Email">
-                        <i class="fa fa-envelope"></i>
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
             </div>
