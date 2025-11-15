@@ -33,6 +33,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <div class="bulat"></div>
             <h1 class="greeting">Hello</h1>
             <h2 class="name">I am Vauzi</h2>
             <p class="description"><span class="typing-text" id="typingText"></span></p>
@@ -44,7 +45,7 @@
                         <i class="fa fa-download"></i> Download CV
                     </button>
                 </a>
-                <button class="btn btn-secondary">Get In Touch</button>
+                <button class="btn btn-secondary" onclick="window.location.href='#contact'">Let's Talk</button>
             </div>
         </div>
         <div class="hero-image">
@@ -73,25 +74,25 @@
                         <div class="skill-item">
                             <span class="skill-name">Frontend</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress" style="width: 25%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Backend</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-progress" style="width: 30%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Database</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                                <div class="skill-progress" style="width: 20%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">UI/UX Design</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
+                                <div class="skill-progress" style="width: 40%"></div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                         place, designed with a clean interface and smooth navigation similar to digital game stores.</p>
 
                     <div class="project-buttons">
-                        <a href="#" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Vauzi-17/Sentinel" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
                         <a href="#" class="project-btn figma"><i class="fa-brands fa-figma"></i> Figma</a>
                     </div>
                 </div>
@@ -135,7 +136,7 @@
                         simple leaderboard to track scores and add a competitive touch.</p>
 
                     <div class="project-buttons">
-                        <a href="#" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Vauzi-17/TicCatDog" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
                         <a href="#" class="project-btn figma"><i class="fa-brands fa-figma"></i> Figma</a>
                     </div>
                 </div>
@@ -150,7 +151,7 @@
                         simple, user-friendly design for planning purchases and reaching financial targets.</p>
 
                     <div class="project-buttons">
-                        <a href="#" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Vauzi-17/MyCelengan" class="project-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
                         <a href="#" class="project-btn figma"><i class="fa-brands fa-figma"></i> Figma</a>
                     </div>
                 </div>
@@ -158,7 +159,28 @@
         </div>
     </section>
 
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">I'd love to hear from you! Whether you have a question or just want to say
+                hello, feel free to reach out.</p>
 
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    
+                    <input type="name" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    
+                    <input type="email" id="email" name="email" required placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" id="message" name="message" required placeholder="Your message">
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -185,7 +207,7 @@
                         class="footer-social-icon" title="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" class="footer-social-icon" title="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61555385019235" target="_blank" class="footer-social-icon" title="Facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                     <a href="https://www.instagram.com/vauzitzy/" target="_blank" class="footer-social-icon"
